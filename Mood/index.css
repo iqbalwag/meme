@@ -1,0 +1,120 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Nerko One", cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+.box-content {
+
+    height: 90%;
+    /* width: 100%; */
+    /* overflow: hidden; */
+    padding: 1%;
+    margin: 16px;
+    background-color: rgb(64, 93, 114);
+}
+
+.title {
+    display: flex;
+    text-transform: capitalize;
+    flex: 1;
+    margin-bottom: 50px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(247, 231, 220);
+}
+
+.containers {
+    display: flex;
+    flex-wrap: nowrap;
+    /* height: calc(100% - 30px); */
+    /* width: 100px; */
+    /* margin-bottom: 40px; */
+
+}
+
+.containers>div {
+    /* background-color: white; */
+    width: 50%;
+}
+
+/* .apa {
+    position: absolute;
+    float: initial;
+    top: 50%;
+    right: 50%;
+    visibility: hidden;
+} */
+
+.container1 {
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-color: rgb(117, 134, 148);
+    background-color: rgb(64, 93, 114);
+    align-content: space-between;
+    text-align: center;
+}
+
+.container1:hover .img-text,
+.container1:hover .img1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+img {
+    width: 90%;
+    background-repeat: no-repeat;
+}
+
+.img1,
+.img2,
+.img-text {
+    transition: visibility 1s, opacity 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.img-text {
+
+    font-weight: bold;
+    font-size: 64px;
+    color: rgb(247, 231, 220);
+    margin-bottom: 10px;
+    /*sementara*/
+}
+
+/* .container1::after {
+    position: absolute;
+    top: 45%;
+    right: 48.5%;
+    font-size: 64px;
+    content: '';
+} */
+
+.container2 {
+    border-left: 2px solid white;
+    background-color: rgb(64, 93, 114);
+    align-content: space-between;
+    text-align: center;
+}
+
+.container2:hover .img-text,
+.container2:hover .img2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.me::before {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    content: 'Dura';
+}
